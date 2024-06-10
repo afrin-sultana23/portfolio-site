@@ -6,4 +6,4 @@
 
 
 Live Preview:
-https://portfolio-nhbys3wpi-afrins-projects-37e29510.vercel.app/
+> https://portfolio-three-rose-33.vercel.app/
