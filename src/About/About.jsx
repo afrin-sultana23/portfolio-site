@@ -25,7 +25,7 @@ const About = () => {
 
                 <div className="flex items-center justify-center flex-col">
                     <div className="border w-52 px-4 border-[#6f9efa] point-expand grayscale hover:grayscale-0 transition-all duration-200">
-                        <img className="" src="/src/assets/afrin.png" alt="a cute pic :)"/>
+                        <img className="" src="https://i.ibb.co/TRjk9PS/afrin.png" alt="a cute pic :)"/>
                     </div>
                 </div>
             </div>
