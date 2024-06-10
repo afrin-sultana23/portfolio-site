@@ -3,4 +3,7 @@
 @tailwind utilities;
 
 
-
+.resume-btn {
+    @apply bg-transparent border-2 border-[#6f9efa] text-[#6f9efa] px-3 py-2 rounded-lg hover:bg-[#6f9efa]
+    cursor-pointer text-lg tracking-wider mt-6 hover:text-white btn ;
+}

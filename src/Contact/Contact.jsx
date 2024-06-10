@@ -62,7 +62,7 @@ const Contact = () => {
                 />
                 <div className="w-full flex justify-end">
                     <button type="submit"
-                            className=" p-2 bg-blue-600 border-none text-white rounded btn btn-outline hover:bg-white  hover:text-black">SEND
+                            className="resume-btn">SEND
                         MESSAGE
                     </button>
                     

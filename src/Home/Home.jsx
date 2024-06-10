@@ -111,8 +111,7 @@ const Home = () => {
                                 <h2 className="text-7xl font-bold text-white point-expand w-fit">Afrin Sultana</h2>
                                 <h3 className="text-6xl text-gray-400 font-semibold">I love finding creative solutions
                                     through code.</h3>
-                                <button className="bg-transparent outline-[#6f9efa] border-2 border-[#6f9efa] text-[#6f9efa] px-3 py-2 rounded-lg hover:bg-[#6f9efa]
-                                                   cursor-pointer text-lg tracking-wider mt-6 hover:text-white btn btn-outline">
+                                <button className="resume-btn">
                                     My Resume
                                 </button>
                             </div>

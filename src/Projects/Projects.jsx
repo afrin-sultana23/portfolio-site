@@ -156,15 +156,15 @@ const Projects = () => {
                 {Projects.map((project) => {
 
                     return (
-                        <div className="card p-3 border border-gray-500 hover:bg-gray-50 shadow hover:bg-opacity-10 overflow-hidden"
+                        <div className="card px-3 py-4 border border-gray-500 hover:bg-gray-50 shadow hover:bg-opacity-20 overflow-hidden"
 
                         >
 
-                            <div className="w-full hover:scale-125 transition-all duration-100  h-[11rem] p-3">
+                            <div className="w-full hover:scale-125 transition-all duration-100 overflow-hidden my-4  h-[11rem] p-3">
                                 <img className="" src={project.image} alt=""/>
                             </div>
-                            <h1 className="font-semibold text-xl text-slate-100 mb-1">{project.name}</h1>
-                            <h2 className="text-gray-300">{project.description}</h2>
+                            <h1 className="font-semibold text-xl text-slate-100 mb-1 mt-2 ">{project.name}</h1>
+                            <h2 className="text-gray-300 pb-2">{project.description}</h2>
                             <div className="flex gap-2 py-1 flex-wrap">
                                 {project.technologies.map((tech) => {
                                     const Icon = tech.icon
