@@ -4,6 +4,5 @@
 
 
 .resume-btn {
-    @apply bg-transparent border-2 border-[#6f9efa] text-[#6f9efa] px-3 py-2 rounded-lg hover:bg-[#6f9efa]
-    cursor-pointer text-lg tracking-wider mt-6 hover:text-white btn ;
+    @apply bg-cyan-500 shadow-lg shadow-cyan-500/50 text-white tracking-wider px-3.5 py-2.5 rounded-lg transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300;
 }

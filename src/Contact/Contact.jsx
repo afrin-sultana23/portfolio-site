@@ -38,7 +38,7 @@ const Contact = () => {
 
     return (
         <div>
-            <h1 className="text-4xl font-semibold text-[#6f9efa] mb-4">Contact Me For Colab</h1>
+            <h1 className="text-4xl font-semibold text-[#85F6DF] mb-4">Contact Me For Colab</h1>
             <form onSubmit={handleSubmit} className="  p-3 py-6 rounded w-full ">
                 <input
                     type="text"

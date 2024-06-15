@@ -8,7 +8,7 @@ const BlobContainer = styled.div`
     height: 100vh;
     width: 100vw;
     z-index: -10;
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur(180px);
     background-image: linear-gradient(#16213E,#0F3460); //#111218 //0A043C  //200E3A;    //12486B;
     overflow: hidden;
 `;
@@ -16,7 +16,7 @@ const BlobContainer = styled.div`
 const BlobElement = styled.div`
 
     z-index: -20;
-    height: 350px;
+    height: 280px;
     aspect-ratio: 1;
     border-radius: 50%;
     position: absolute;

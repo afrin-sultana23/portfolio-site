@@ -1,16 +1,18 @@
 import React from 'react';
-import {FaReact} from "react-icons/fa";
+import {FaJs, FaReact} from "react-icons/fa";
 
 import {SiTailwindcss} from "react-icons/si";
 import { RiNextjsLine} from "react-icons/ri";
 import {CgChart} from "react-icons/cg";
+import {FiExternalLink} from "react-icons/fi";
 
 const Projects = () => {
     const Projects =  [
         {
             name: "Personal portfolio",
             description: "description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem corporis hic,",
-            image: "https://imgur.com/vh3hO30.png",
+            image: "https://i.imgur.com/ofRPfrq.png",
+            link: "https://portfolio-three-rose-33.vercel.app/",
             technologies: [
                 {
                     name: "React",
@@ -19,10 +21,10 @@ const Projects = () => {
                     icon: FaReact,
                 },
                 {
-                    name: "Next.js",
-                    link: "https://nextjs.org/",
+                    name: "JavaScript",
+                    link: "https://javascript.com/",
                     color: "text-[#000000]",
-                    icon: RiNextjsLine
+                    icon: FaJs,
                 },
                 {
                     name: "TailwindCSS",
@@ -37,7 +39,8 @@ const Projects = () => {
         {
             name: "Student dashboard",
             description: "description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem corporis hic,",
-            image: "https://imgur.com/Kxumt5k.png",
+            image: "https://i.imgur.com/Wh3PiUW.png",
+            link: "https://student-portal-tan.vercel.app/home",
             technologies: [
                 {
                     name: "React",
@@ -68,9 +71,9 @@ const Projects = () => {
 
         },
         {
-            name: "Blog website",
+            name: "Geometry genius",
             description: "description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem corporis hic,",
-            image: "https://i.imgur.com/mnshELg.png",
+            image: "https://i.imgur.com/w5RwZrI.png",
             technologies: [
                 {
                     name: "React",
@@ -79,10 +82,10 @@ const Projects = () => {
                     icon: FaReact,
                 },
                 {
-                    name: "Next.js",
-                    link: "https://nextjs.org/",
+                    name: "JavaScript",
+                    link: "https://javascript.com/",
                     color: "text-[#000000]",
-                    icon: RiNextjsLine
+                    icon: FaJs,
                 },
                 {
                     name: "TailwindCSS",
@@ -98,6 +101,7 @@ const Projects = () => {
             name: "Restuarant website",
             description: "description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem corporis hic,",
             image: "https://imgur.com/1IJn7dJ.png",
+
             technologies: [
                 {
                     name: "React",
@@ -122,9 +126,10 @@ const Projects = () => {
 
         },
         {
-            name: "Beautiful Cafe Website",
+            name: "Tea house",
             description: "description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem corporis hic,",
-            image: "https://i.imgur.com/m1scmPu.png",
+            image: "https://i.imgur.com/h2wSbga.png",
+
             technologies: [
                 {
                     name: "React",
@@ -133,10 +138,10 @@ const Projects = () => {
                     icon: FaReact,
                 },
                 {
-                    name: "Next.js",
-                    link: "https://nextjs.org/",
+                    name: "JavaScript",
+                    link: "https://javascript.com/",
                     color: "text-[#000000]",
-                    icon: RiNextjsLine
+                    icon: FaJs,
                 },
                 {
                     name: "TailwindCSS",
@@ -151,7 +156,7 @@ const Projects = () => {
     ]
     return (
         <div>
-            <h1 className="text-4xl font-semibold text-[#6f9efa] mb-4">Projects</h1>
+            <h1 className="text-4xl font-semibold text-[#85F6DF] mb-4">My Projects</h1>
             <div className="grid grid-cols-3 gap-5">
                 {Projects.map((project) => {
 
@@ -160,10 +165,14 @@ const Projects = () => {
 
                         >
 
-                            <div className="w-full hover:scale-125 transition-all duration-100 overflow-hidden my-4  h-[11rem] p-3">
+                            <div className="w-full hover:scale-125 transition-all duration-100 overflow-hidden my-2  h-[10rem] p-3">
                                 <img className="" src={project.image} alt=""/>
                             </div>
-                            <h1 className="font-semibold text-xl text-slate-100 mb-1 mt-2 ">{project.name}</h1>
+                            <div className="flex items-center justify-between">
+                                <h1 className="font-semibold text-xl text-slate-100 mb-1 ">{project.name}</h1>
+                                <a href={project.link} target="_blank"> <FiExternalLink  className="h-8 w-8 text-indigo-500 pl-2" /></a>
+
+                            </div>
                             <h2 className="text-gray-300 pb-2">{project.description}</h2>
                             <div className="flex gap-2 py-1 flex-wrap">
                                 {project.technologies.map((tech) => {
